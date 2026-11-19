@@ -164,9 +164,9 @@ Asistan "bu iş 2 saat sürer" diyor. Gerçekte ne kadar sürdüğünü yazıp t
 **4. Kasa Bekçisi'nin gölge haftası.**
 Bekçi şu an *gölge kipinde*: ne yapacağını raporluyor ama onarımları kendisi yapmıyor. Bir haftalık raporları birlikte okuyup "buna güvenebilir miyim" kararını vereceğiz.
 
-## 🐣 Bu repo neden var
+## 🧭 Bu repo neden var
 
-Ben kıdemli bir yazılımcı değilim. Yapay zekâ ajanlarıyla gerçek ürünler geliştiriyorum ve yolda yazılımın temellerini öğreniyorum. Bu kasa, o yolculuğun en çok işe yarayan parçası oldu.
+Yapay zekâ ajanlarıyla gerçek ürünler geliştiriyorum. Bu kasa, o yolculuğun en çok işe yarayan parçası oldu.
 
 Bu bir şablon değil, bir vitrin. Kopyalayıp kurmanız için değil, fikir almanız için. Kendi asistanınıza hafıza kurarken işinize yarayan bir parça bulursanız, ne mutlu.
 

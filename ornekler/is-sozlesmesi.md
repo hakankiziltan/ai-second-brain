@@ -61,15 +61,10 @@ bağlamla tahmine dayalı iş yapılmaz.
 
 ## Anlatım biçimi
 
-Hakan yazılım mühendisi değil; işlerinin çoğunu yapay zekâyla
-ilerletiyor. Teknik konular bu yüzden 101 seviyesinde anlatılır.
-
-- Hakan anlamadığı bir yeri tekrar sorduğunda açıklama uzatılmaz,
+- Teknik konular adım adım, jargon açıklanarak anlatılır.
+- Anlaşılmayan bir yer tekrar sorulduğunda açıklama uzatılmaz,
   **parçalanır**: kısa bir parça anlatılır, oturduğu teyit edilir,
   sonra bir sonraki parçaya geçilir.
-- Hakan metni madde madde, okurken yanıtlıyor. Bu yüzden her madde
-  kendi başına cevaplanabilir olmalı; soru metnin sonuna toplanmaz,
-  ait olduğu maddenin yanına yazılır.
 
 ## İleriye bakma
 

@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
 </p>
 
-> **In English:** This is a showcase, not a template. It explains how I gave my AI assistant a long-term memory — an Obsidian vault built on Andrej Karpathy's *LLM Wiki* idea — and what I added on top: a work contract, private zones, status cards and a night-shift agent. It's written in Turkish because that's who I'm talking to first; the diagrams speak every language.
+> **In English:** This is a showcase, not a template. It explains how I gave my AI assistant a long-term memory — an Obsidian vault built on Andrej Karpathy's *LLM Wiki* idea — and what I added on top: a work contract, private zones, status cards, a night-shift agent, and live sync across two Macs and GitHub. It's written in Turkish because that's who I'm talking to first; the diagrams speak every language.
 
 ---
 
@@ -91,6 +91,24 @@ Ben uyurken çalışan bir ajan. Her gece kasayı tarıyor: kopuk bağlantılar,
 ### 🤖 8. Tek kasa, birden çok asistan
 
 Claude Code, Codex ve telefonumdaki asistan **aynı kasayı** okuyor. Kurallar dosyalarda yazılı olduğu için asistan değişince hafıza kaybolmuyor.
+
+### 🔄 9. Her yerde aynı kasa: iki Mac + GitHub
+
+Kasa üç yerde yaşıyor ve üçü de kendiliğinden güncel kalıyor:
+
+```mermaid
+flowchart LR
+    M1["💻 Ana Mac<br/>Git burada çalışır"] <-->|"Syncthing<br/>anlık, buluta uğramadan"| M2["💻 İkinci Mac"]
+    M1 -->|"her gece, Kasa Bekçisi<br/>yalnız ileri sarar, asla zorlamaz"| GH["☁️ GitHub<br/>özel yedek"]
+    GH -->|"okur"| T["📱 Telefondaki asistan"]
+```
+
+- **İki Mac arasında: Syncthing.** Bir Mac'te yazılan not saniyeler içinde öbüründe. Dosyalar buluta uğramıyor; iki makine birbiriyle doğrudan konuşuyor. Sağlık ve finans notları da bu yüzden iki makinede birden olabiliyor: ikisi de benim.
+- **Git yalnız ana Mac'te.** Git'in kendi klasörü bilerek senkron dışında. İki makinenin Git'i aynı anda yazarsa depo bozulur. İkinci Mac'te yapılan değişiklikleri ana Mac'teki Kasa Bekçisi saatlik turunda fark edip commit'liyor.
+- **GitHub'a: her gece.** Bekçi gece turunu bitirince kasayı özel bir GitHub deposuna gönderiyor. Kişisel alana dokunan bir commit varsa hiçbir şey gitmiyor; o klasör GitHub'ı hiç görmüyor.
+- **Neden GitHub?** Ana Mac kapalıyken bile telefonumdaki asistan sabah özetini (`durum.md`) GitHub'dan okuyabiliyor.
+
+**Yolda öğrenilen ders:** Kurulumun ilk gecesi 16 dosya senkronlanamadı. Sebebi Türkçe karakterlerdi: aynı "ş" harfi bilgisayarda iki farklı biçimde saklanabiliyor ve macOS ile asistanın yazdığı biçim farklıydı. O günden beri yeni klasör adları Türkçe karaktersiz yazılıyor; görünen ad Türkçe kalıyor.
 
 ## 🗺 Sistem nasıl akıyor
 
